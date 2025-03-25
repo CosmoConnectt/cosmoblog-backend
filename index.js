@@ -23,7 +23,7 @@ const __dirname = dirname(__filename);
 // Allow CORS for frontend
 const allowedOrigins = process.env.ALLOWED_ORIGINS
   ? process.env.ALLOWED_ORIGINS.split(",")
-  : ["http://localhost:5173"]; // Default for local dev
+  : ["http://localhost:5173", "https://cosmoblog-frontend.vercel.app"]; // Default for local dev and production
 
 app.use(
   cors({
